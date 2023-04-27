@@ -1,0 +1,10 @@
+1. bsp
+2. big square node
+3. one division 
+	left and right child on the nodes and also show the tree structure
+4. further divisions
+	mutation
+5. further divisions
+	requirement fulfilled halt the recursive
+6. highlight the leaf nodes
+7. highlight a nodes starting from the lowest one leaf to up to demonstrate the disaparation between nodes.

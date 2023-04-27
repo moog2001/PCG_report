@@ -43,6 +43,10 @@
 \renewcommand{\lstlistingname}{Код}
 \renewcommand{\lstlistlistingname}{\lstlistingname ын жагсаалт}
 
+% custom packages
+\usepackage{subcaption}
+\usepackage{biblatex}
+\addbibresource{References.bib}
 \usepackage{color}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -104,6 +108,57 @@ captionpos=b
  
 \lstset{style=mystyle, label=DescriptiveLabel} 
 
+%defining c#
+
+% \definecolor{cloudwhite}{rgb}{0.9412, 0.9608, 0.8471}
+
+% \lstset{
+% language=csh,
+% basicstyle=\footnotesize\ttfamily,
+% numbers=left,
+% numberstyle=\tiny,
+% numbersep=5pt,
+% tabsize=2,
+% extendedchars=true,
+% breaklines=true,
+% frame=b,
+% stringstyle=\color{blue}\ttfamily,
+% showspaces=false,
+% showtabs=false,
+% xleftmargin=17pt,
+% framexleftmargin=17pt,
+% framexrightmargin=5pt,
+% framexbottommargin=4pt,
+% commentstyle=\color{green},
+% morecomment=[l]{//}, %use comment-line-style!
+% morecomment=[s]{/*}{*/}, %for multiline comments
+% showstringspaces=false,
+% morekeywords={ abstract, event, new, struct,
+% as, explicit, null, switch,
+% base, extern, object, this,
+% bool, false, operator, throw,
+% break, finally, out, true,
+% byte, fixed, override, try,
+% case, float, params, typeof,
+% catch, for, private, uint,
+% char, foreach, protected, ulong,
+% checked, goto, public, unchecked,
+% class, if, readonly, unsafe,
+% const, implicit, ref, ushort,
+% continue, in, return, using,
+% decimal, int, sbyte, virtual,
+% default, interface, sealed, volatile,
+% delegate, internal, short, void,
+% do, is, sizeof, while,
+% double, lock, stackalloc,
+% else, long, static,
+% enum, namespace, string},
+% keywordstyle=\color{cyan},
+% identifierstyle=\color{red},
+% backgroundcolor=\color{cloudwhite},
+% }
+
+
 
 \let\oldabs\abs
 \def\abs{\@ifstar{\oldabs}{\oldabs*}}
@@ -116,20 +171,19 @@ captionpos=b
 %----------------------------------------------------------------------------------------
 
 % Дипломийн ажлын сэдэв
-\title{Веб фронт-энд хөгжүүлэлт}
+\title{Процедурын дагуу видео тоглоомын орчныг үүсгэх}
 % Дипломын ажлын англи нэр
-\titleEng{Web front-end developing}
+\titleEng{Procedurally Generating Video Game Enviroment}
 % Өөрийн овог нэрийг бүтнээр нь бичнэ
-\author{Батбаярын Бат-Өлзий}
+\author{Соёл-Эрдэнэ Мөнх-Очир}
 % Өөрийн овгийн эхний үсэг нэрээ бичнэ
-\authorShort{Б. Бат-Өлзий}
+\authorShort{С. Мөнх-Очир}
 % Удирдагчийн зэрэг цол овгийн эхний үсэг нэр
-\supervisor{С. Дөлмандах}
+\supervisor{Проф. Х. Оюундолгор}
 % Хамтарсан удирдагчийн зэрэг цол овгийн эхний үсэг нэр
-\cosupervisor{Н. Оюун-Эрдэнэ}
 
 % СиСи дугаар 
-\sisiId{18B1NUM3474}
+\sisiId{19B1NUM0574}
 % Их сургуулийн нэр
 \university{МОНГОЛ УЛСЫН ИХ СУРГУУЛЬ}
 % Бүрэлдэхүүн сургуулийн нэр
@@ -137,23 +191,21 @@ captionpos=b
 % Тэнхимийн нэр
 \department{МЭДЭЭЛЭЛ, КОМПЬЮТЕРИЙН УХААНЫ ТЭНХИМ}
 % Зэргийн нэр
-\degreeName{Үйлдвэрлэлийн дадлагын тайлан}
+\degreeName{Бакалаврын судалгааны ажил}
 % Суралцаж буй хөтөлбөрийн нэр
 \programeName{Програм Хангамж(D061302)}
 % Хэвлэгдсэн газар
 \cityName{Улаанбаатар}
 % Хэвлэгдсэн огноо
-\gradyear{2021 оны 9 сар}
+\gradyear{2023 оны 3 сар}
 
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------`--------------------------------
 %   Доорх хэсгийг өөрчлөх шаардлагагүй
 %----------------------------------------------------------------------------------------
 \include{important/main-pre}
 
 \include{important/abstract}
-
-\include{important/plan}
 
 \include{body}
 

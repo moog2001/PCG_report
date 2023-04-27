@@ -1,0 +1,12 @@
+{
+    "extends": "@motion-canvas/2d/tsconfig.project.json",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "out",
+        "baseUrl": "src",
+        "sourceMap": true,
+        "inlineSources": true,
+    },
+    "include": ["src"]
+}
